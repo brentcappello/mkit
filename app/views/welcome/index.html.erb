@@ -1,0 +1,28 @@
+<h1>This is Where is all Begins</h1>
+<p>Hello from Index</p>
+
+<a href="/demo/hello" class="glyphicon glyphicon-volume-down">Hello Page 1</a><br />
+<%= link_to('Hello Page 2', {:action => 'hello'}) %> <br />
+
+<%= link_to('Hello with Parameters', {:action => 'hello', :page => 5, :id => 20}) %>
+
+
+<div class="btn-group">
+  <button type="button" class="btn btn-default">Left</button>
+  <button type="button" class="btn btn-default">Middle</button>
+  <button type="button" class="btn btn-default">Right</button>
+</div>
+
+<!-- Single button -->
+				<div class="btn-group">
+				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				    Action <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" role="menu">
+				    <li><a href="#">Action</a></li>
+				    <li><a href="#">Another action</a></li>
+				    <li><a href="#">Something else here</a></li>
+				    <li class="divider"></li>
+				    <li><a href="#">Separated link</a></li>
+				  </ul>
+				</div>
