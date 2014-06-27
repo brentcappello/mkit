@@ -29,7 +29,7 @@ class MarathonsController < ApplicationController
     respond_to do |format|
       if @marathon.save
         flash[:success] = "#{@marathon.name} was successfully created."
-        format.html { redirect_to @marathon}
+        format.html { redirect_to marathons_url}
         format.json { render :show, status: :created, location: @marathon }
       else
         format.html { render :new }
