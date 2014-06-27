@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :marathons
+
   root 'welcome#index'
 
   #get 'demo/index'

@@ -1,5 +1,26 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// Use CMD + SHFT + C for color Pallette
 
-@import 'bootstrap-custom';
+$main-color: #56a7ff;
+@mixin rounded-corners($radius: 5px) {
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+}
+
+.cool { 
+	color: $main-color; 
+	@include rounded-corners(10px);
+	padding: 10px;
+	margin: 15px;
+}
+
+.even_cooler {
+	/* Note: this will use the default parameter of 5px */
+	@include rounded-corners;
+	padding: 5px
+
+
+}

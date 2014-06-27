@@ -1,0 +1,59 @@
+
+
+<p>
+  <strong>Name:</strong>
+  <%= @marathon.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @marathon.description %>
+</p>
+
+<p>
+  <strong>Event date:</strong>
+  <%= @marathon.event_date %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @marathon.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @marathon.state %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @marathon.country %>
+</p>
+
+<p>
+  <strong>Registration url:</strong>
+  <%= @marathon.registration_url %>
+</p>
+
+<p>
+  <strong>Website url:</strong>
+  <%= @marathon.website_url %>
+</p>
+
+<p>
+  <strong>Logo:</strong>
+  <%= @marathon.logo %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @marathon.image %>
+</p>
+
+<p>
+  <strong>Map:</strong>
+  <%= @marathon.map %>
+</p>
+
+<%= link_to 'Edit', edit_marathon_path(@marathon) %> |
+<%= link_to 'Back', marathons_path %>
